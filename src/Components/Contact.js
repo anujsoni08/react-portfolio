@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const Contact = ({ data }) => {
-
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
@@ -81,7 +80,7 @@ const Contact = ({ data }) => {
                   rows="15"
                   id="contactMessage"
                   name="contactMessage"
-                ></textarea>
+                />
               </div>
 
               <div>
@@ -97,7 +96,8 @@ const Contact = ({ data }) => {
 
           <div id="message-warning"> Error boy</div>
           <div id="message-success">
-            <i className="fa fa-check"></i>Your message was sent, thank you!
+            <i className="fa fa-check" />
+            Your message was sent, thank you!
             <br />
           </div>
         </div>
@@ -109,13 +109,13 @@ const Contact = ({ data }) => {
               <br />
               {data?.name}
               {data?.address?.street} <br />
-              {data?.address?.city}, {data?.address?.state} {data?.address?.zip}
+              {data?.address?.city},{data?.address?.state} {data?.address?.zip}
               <br />
               <span>{data?.phone}</span>
             </p>
           </div>
 
-          <div className="widget widget_tweets"></div>
+          <div className="widget widget_tweets" />
         </aside>
       </div>
     </section>

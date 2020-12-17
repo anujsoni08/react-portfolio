@@ -1,9 +1,10 @@
 import React from "react";
 
 const About = (props) => {
-  const { name, bio, phone, email, resumeDownload } = props.data;
-  const { city, state, zip } = props.data.address;
-  const profilepic = "images/" + props.data.image;
+  const { data } = props;
+  const { name, bio, phone, email, resumeDownload, address, image } = data;
+  const { city, state, zip } = address;
+  const profilepic = `images/${image}`;
 
   return (
     <section id="about">
@@ -28,7 +29,8 @@ const About = (props) => {
                 <span>{name}</span>
                 <br />
                 <span>
-                  {city} {state}, {zip}
+                  {city}
+                  {state},{zip}
                 </span>
                 <br />
                 <span>{phone}</span>
@@ -38,8 +40,14 @@ const About = (props) => {
             </div>
             <div className="columns download" style={{ display: "none" }}>
               <p>
-                <a href={resumeDownload} className="button" target="_blank">
-                  <i className="fa fa-download"></i>Download Resume
+                <a
+                  href={resumeDownload}
+                  className="button"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <i className="fa fa-download" />
+                  Download Resume
                 </a>
               </p>
             </div>

@@ -1,8 +1,8 @@
 import React from "react";
 
 const Resume = (props) => {
-  let skillmessage = props.data.skillmessage;
-  let education = props.data.education.map((educationObj) => (
+  const { skillmessage } = props.data;
+  const education = props.data.education.map((educationObj) => (
     <div key={educationObj.school}>
       <h3>{educationObj.school}</h3>
       <p className="info">
@@ -12,7 +12,7 @@ const Resume = (props) => {
       <p>{educationObj.description}</p>
     </div>
   ));
-  let work = props.data.work.map((work) => (
+  const work = props.data.work.map((work) => (
     <div key={work.company}>
       <h3>{work.company}</h3>
       <p className="info">
@@ -22,11 +22,11 @@ const Resume = (props) => {
       <p>{work.description}</p>
     </div>
   ));
-  let skills = props.data.skills.map((skills) => {
-    let className = "bar-expand " + skills.name.toLowerCase();
+  const skills = props.data.skills.map((skills) => {
+    const className = `bar-expand ${skills.name.toLowerCase()}`;
     return (
       <li key={skills.name}>
-        <span style={{ width: skills.level }} className={className}></span>
+        <span style={{ width: skills.level }} className={className} />
         <em>{skills.name}</em>
       </li>
     );

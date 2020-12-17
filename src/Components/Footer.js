@@ -4,7 +4,7 @@ const Footer = (props) => {
   const networks = props.data.social.map((network) => (
     <li key={network.name}>
       <a href={network.url} target="_blank">
-        <i className={network.className}></i>
+        <i className={network.className} />
       </a>
     </li>
   ));
@@ -17,7 +17,7 @@ const Footer = (props) => {
         </div>
         <div id="go-top">
           <a className="smoothscroll" title="Back to Top" href="#home">
-            <i className="icon-up-open"></i>
+            <i className="icon-up-open" />
           </a>
         </div>
       </div>

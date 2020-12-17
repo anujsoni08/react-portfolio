@@ -1,12 +1,19 @@
 import React from "react";
 
 const Portfolio = (props) => {
-  let projects = props.data.projects.map((project) => {
-    let projectImage = "images/portfolio/" + project.image;
+  const { data } = props;
+
+  const projects = data.projects.map((project) => {
+    const projectImage = `images/portfolio/${project.image}`;
     return (
       <div key={project.title} className="columns portfolio-item">
         <div className="item-wrap">
-          <a href={project.url} target="_blank" title={project.title}>
+          <a
+            href={project.url}
+            rel="noreferrer"
+            target="_blank"
+            title={project.title}
+          >
             <img alt={project.title} src={projectImage} />
             <div className="overlay">
               <div className="portfolio-item-meta">
@@ -15,7 +22,7 @@ const Portfolio = (props) => {
               </div>
             </div>
             <div className="link-icon">
-              <i className="fa fa-link"></i>
+              <i className="fa fa-link" />
             </div>
           </a>
         </div>

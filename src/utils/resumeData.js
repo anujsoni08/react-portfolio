@@ -7,7 +7,7 @@ const resumeData = {
     bio: "My name is Anuj, I'm a Software Engineer.",
     contactmessage: "Get in touch with me to receive further details.",
     email: "anujsoni08@gmail.com",
-    phone: "+91 8847 312 070",
+    phone: "+91 8847 312 070 | +91 9041 415 592",
     address: {
       city: "Gurgaon",
       state: "Haryana",

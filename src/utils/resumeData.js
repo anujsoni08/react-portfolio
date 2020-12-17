@@ -3,7 +3,7 @@ const resumeData = {
     name: "Anuj Soni",
     occupation: "Software Engineer",
     description: "Software Engineer by Day, Avid Reader by Night.",
-    image: "anuj_profile_photo.jpeg",
+    image: "anuj_profile_photo.jpg",
     bio: "My name is Anuj, I'm a Software Engineer.",
     contactmessage: "Get in touch with me to receive further details.",
     email: "anujsoni08@gmail.com",
@@ -66,27 +66,67 @@ const resumeData = {
         company: "Edfora Infotech",
         title: "Software Engineer",
         years: "May 2019 - Jun 2020",
-        description: "Worked as a Software Engineer (Full Stak)",
+        description: "Worked as a Software Engineer (Full Stack)",
       },
       {
         company: "Mountblue Technologies Pvt. Ltd.",
         title: "Software Engineer",
         years: "Feb 2019 - Jun 2020",
-        description: "Worked as a Software Engineer (Full Stak)",
+        description: "Worked as a Software Engineer (Full Stack)",
       },
     ],
     skills: [
       {
+        name: "Javascript",
+        level: "90%",
+      },
+      {
+        name: "Typescript",
+        level: "90%",
+      },
+      {
         name: "ReactJs",
-        level: "100%",
+        level: "90%",
+      },
+      {
+        name: "Angular",
+        level: "90%",
+      },
+      {
+        name: "Redux",
+        level: "90%",
+      },
+      {
+        name: "Redux-Saga",
+        level: "80%",
+      },
+      {
+        name: "Webpack",
+        level: "80%",
       },
       {
         name: "CSS",
-        level: "95%",
+        level: "90%",
+      },
+      {
+        name: "PWA",
+        level: "80%",
+      },
+      {
+        name: "NodeJs",
+        level: "80%",
+      },
+      {
+        name: "Jest",
+        level: "70%",
+      },
+      {
+        name: "Emzyme",
+        level: "70%",
       },
       {
         name: "Git",
-        level: "60%",
+        level: "80%",
       },
       {
         name: "HTML5",
@@ -94,7 +134,7 @@ const resumeData = {
       },
       {
         name: "MongoDB",
-        level: "80%",
+        level: "70%",
       },
     ],
   },
@@ -103,7 +143,7 @@ const resumeData = {
       {
         title: "Counter Project",
         category: "Counter Project built using React",
-        image: "counter-demo.jpeg",
+        image: "counter-demo.png",
         url: "https://counter-demo.netlify.app/",
       },
     ],

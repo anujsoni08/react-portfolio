@@ -1,15 +1,13 @@
 import React from "react";
 
 const Footer = (props) => {
-  const networks = props.data.social.map(function (network) {
-    return (
-      <li key={network.name}>
-        <a href={network.url}>
-          <i className={network.className}></i>
-        </a>
-      </li>
-    );
-  });
+  const networks = props.data.social.map((network) => (
+    <li key={network.name}>
+      <a href={network.url} target="_blank">
+        <i className={network.className}></i>
+      </a>
+    </li>
+  ));
 
   return (
     <footer>

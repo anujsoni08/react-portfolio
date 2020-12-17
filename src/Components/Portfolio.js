@@ -1,12 +1,12 @@
 import React from "react";
 
 const Portfolio = (props) => {
-  let projects = props.data.projects.map(function (project) {
+  let projects = props.data.projects.map((project) => {
     let projectImage = "images/portfolio/" + project.image;
     return (
       <div key={project.title} className="columns portfolio-item">
         <div className="item-wrap">
-          <a href={project.url} title={project.title}>
+          <a href={project.url} target="_blank" title={project.title}>
             <img alt={project.title} src={projectImage} />
             <div className="overlay">
               <div className="portfolio-item-meta">

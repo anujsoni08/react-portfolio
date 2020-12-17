@@ -4,15 +4,13 @@ const Header = (props) => {
   const { name, occupation, description, social } = props.data;
 
   const city = props.data.address.city;
-  const networks = social.map(function (network) {
-    return (
-      <li key={network.name}>
-        <a href={network.url}>
-          <i className={network.className}></i>
-        </a>
-      </li>
-    );
-  });
+  const networks = social.map((network) => (
+    <li key={network.name}>
+      <a href={network.url} target="_blank">
+        <i className={network.className}></i>
+      </a>
+    </li>
+  ));
 
   return (
     <header id="home">
@@ -40,14 +38,14 @@ const Header = (props) => {
               Resume
             </a>
           </li>
-          <li>
-            <a className="smoothscroll" href="#portfolio">
-              Works
+          <li style={{ display: "none" }}>
+            <a className="smoothscroll" href="#blogs">
+              Blogs
             </a>
           </li>
           <li>
-            <a className="smoothscroll" href="#testimonials">
-              Testimonials
+            <a className="smoothscroll" href="#portfolio">
+              Works
             </a>
           </li>
           <li>
@@ -60,7 +58,7 @@ const Header = (props) => {
 
       <div className="row banner">
         <div className="banner-text">
-          <h1 className="responsive-headline">I'm {name}.</h1>
+          <h1 className="responsive-headline">I'm {name}</h1>
           <h3>
             I'm a {city} based <span>{occupation}</span>. {description}.
           </h3>

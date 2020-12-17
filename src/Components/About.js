@@ -12,6 +12,8 @@ const About = (props) => {
           <img
             className="profile-pic"
             src={profilepic}
+            height="120"
+            width="120"
             alt="Anuj Profile Pic"
           />
         </div>
@@ -36,7 +38,7 @@ const About = (props) => {
             </div>
             <div className="columns download">
               <p>
-                <a href={resumeDownload} className="button">
+                <a href={resumeDownload} className="button" target="_blank">
                   <i className="fa fa-download"></i>Download Resume
                 </a>
               </p>

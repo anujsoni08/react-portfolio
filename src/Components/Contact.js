@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 
 const Contact = ({ data }) => {
-  const [url, setUrl] = useState(
-    "mailto:anujsoni08@gmail.com?subject=subject&body=body"
-  );
+
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
-  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
+  const handleClick = (event) => {
+    event.preventDefault();
+    window.open(
+      `mailto:anujsoni08@gmail.com?subject=${subject}&body=${name}: ${message}`
+    );
   };
 
   return (
@@ -38,7 +37,6 @@ const Contact = ({ data }) => {
                 <input
                   value={name}
                   type="text"
-                  defaultValue=""
                   size="35"
                   id="contactName"
                   name="contactName"
@@ -51,13 +49,12 @@ const Contact = ({ data }) => {
                   Email <span className="required">*</span>
                 </label>
                 <input
-                  value={email}
+                  value="anujsoni08@gmail.com"
                   type="text"
-                  defaultValue=""
+                  disabled
                   size="35"
                   id="contactEmail"
                   name="contactEmail"
-                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
 
@@ -66,7 +63,6 @@ const Contact = ({ data }) => {
                 <input
                   value={subject}
                   type="text"
-                  defaultValue=""
                   size="35"
                   id="contactSubject"
                   name="contactSubject"
@@ -110,8 +106,8 @@ const Contact = ({ data }) => {
           <div className="widget widget_contact">
             <h4>Address and Phone</h4>
             <p className="address">
-              {data?.name}
               <br />
+              {data?.name}
               {data?.address?.street} <br />
               {data?.address?.city}, {data?.address?.state} {data?.address?.zip}
               <br />

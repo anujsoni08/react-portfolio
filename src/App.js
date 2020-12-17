@@ -1,25 +1,26 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 
 import "./App.css";
 import resumeData from "./utils/resumeData";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import About from "./Components/About";
-import Resume from "./Components/Resume";
-import Contact from "./Components/Contact";
-import Portfolio from "./Components/Portfolio";
 
-const App = () => {
-  return (
-    <div className="App">
+const Header = lazy(() => import("./Components/Header"));
+const Footer = lazy(() => import("./Components/Footer"));
+const About = lazy(() => import("./Components/About"));
+const Resume = lazy(() => import("./Components/Resume"));
+const Contact = lazy(() => import("./Components/Contact"));
+const Portfolio = lazy(() => import("./Components/Portfolio"));
+
+const App = () => (
+  <div className="App">
+    <Suspense fallback={<h1>Loading...</h1>}>
       <Header data={resumeData.main} />
       <About data={resumeData.main} />
       <Resume data={resumeData.resume} />
       <Portfolio data={resumeData.portfolio} />
       <Contact data={resumeData.main} />
       <Footer data={resumeData.main} />
-    </div>
-  );
-};
+    </Suspense>
+  </div>
+);
 
 export default App;

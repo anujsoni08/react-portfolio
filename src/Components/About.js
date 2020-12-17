@@ -36,7 +36,7 @@ const About = (props) => {
                 <span>{email}</span>
               </p>
             </div>
-            <div className="columns download" style={{display: none}}>
+            <div className="columns download" style={{ display: "none" }}>
               <p>
                 <a href={resumeDownload} className="button" target="_blank">
                   <i className="fa fa-download"></i>Download Resume

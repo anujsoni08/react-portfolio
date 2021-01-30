@@ -6,7 +6,7 @@ const Header = (props) => {
   const { city } = props.data.address;
   const networks = social.map((network) => (
     <li key={network.name}>
-      <a href={network.url} target="_blank">
+      <a href={network.url} target="_blank" rel="noreferrer">
         <i className={network.className} />
       </a>
     </li>

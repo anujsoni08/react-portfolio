@@ -3,7 +3,7 @@ import React from "react";
 const Footer = (props) => {
   const networks = props.data.social.map((network) => (
     <li key={network.name}>
-      <a href={network.url} target="_blank">
+      <a href={network.url} target="_blank" rel="noreferrer">
         <i className={network.className} />
       </a>
     </li>

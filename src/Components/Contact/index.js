@@ -109,7 +109,7 @@ const Contact = ({ data }) => {
               <br />
               {data?.name}
               {data?.address?.street} <br />
-              {data?.address?.city},{data?.address?.state} {data?.address?.zip}
+              {data?.address?.city}, {data?.address?.state}, {data?.address?.zip}
               <br />
               <span>{data?.phone}</span>
             </p>

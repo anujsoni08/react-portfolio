@@ -7,14 +7,14 @@ const resumeData = {
     bio: "My name is Anuj, I'm a Software Engineer.",
     contactmessage: "Get in touch with me to receive further details.",
     email: "anujsoni08@gmail.com",
-    phone: "+91 8847 312 070 | +91 9041 415 592",
+    phone: "+91 8847312070 | +91 9041415592",
     address: {
       city: "Gurgaon",
-      state: "Haryana",
-      zip: "122004",
+      state: " Haryana",
+      zip: " 122004",
     },
-    website: "http://www.anujsoni.netlify.app",
-    resumedownload: "http://anujsoni.netlify.app",
+    website: "http://www.anuj-soni.netlify.app",
+    resumedownload: "http://anuj-soni.netlify.app",
     social: [
       {
         name: "facebook",
@@ -89,20 +89,16 @@ const resumeData = {
         level: "90%",
       },
       {
-        name: "Angular",
-        level: "90%",
-      },
-      {
         name: "Redux",
         level: "90%",
       },
       {
         name: "Redux-Saga",
-        level: "80%",
+        level: "50%",
       },
       {
         name: "Webpack",
-        level: "80%",
+        level: "40%",
       },
       {
         name: "CSS",
@@ -110,19 +106,11 @@ const resumeData = {
       },
       {
         name: "PWA",
-        level: "80%",
+        level: "50%",
       },
       {
         name: "NodeJs",
-        level: "80%",
-      },
-      {
-        name: "Jest",
-        level: "70%",
-      },
-      {
-        name: "Emzyme",
-        level: "70%",
+        level: "60%",
       },
       {
         name: "Git",
@@ -134,7 +122,7 @@ const resumeData = {
       },
       {
         name: "MongoDB",
-        level: "70%",
+        level: "60%",
       },
     ],
   },

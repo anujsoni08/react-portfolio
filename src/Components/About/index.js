@@ -3,7 +3,7 @@ import React from "react";
 const About = (props) => {
   const { data } = props;
   const { name, bio, phone, email, resumeDownload, address, image } = data;
-  const { city, state,               zip } = address;
+  const { city, state, zip } = address;
   const profilepic = `images/${image}`;
 
   return (
@@ -29,7 +29,7 @@ const About = (props) => {
                 <span>{name}</span>
                 <br />
                 <span>
-                  {city}
+                  {city},
                   {state},{zip}
                 </span>
                 <br />
